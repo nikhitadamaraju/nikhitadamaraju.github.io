@@ -11,5 +11,6 @@ navbar:
     href: http://github.com/nikhitadamaraju/
   - icon: fa-linkedin fa-lg
     href: https://www.linkedin.com/in/nikhita-damaraju/
-  output:
-    html_document:
+output:
+  html_document:
+    theme: united

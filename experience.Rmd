@@ -1,15 +1,53 @@
 ---
-title: "Experience"
+title: "Professional Experience"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# Research Experience
+# Research Projects
+### Dual Degree Thesis, Indian Institute of Technology Madras, India
+Robert Bosch Center for Data Science and AI
+<br> July, 2019 – May, 2020
+<br> Thesis advisor: Dr. Himanshu Sinha	
 
-Hi! 
-I'm Nikhita Damaraju, a first year masters student studying Biostatistics at Columbia University Mailman School of Public Health. My professional interests include health informatics and precision medicine. When I'm not busy with my coursework, I enjoy playing the violin and baking.
+*	Assessed multiple gestational age (GA) estimation models on preterm birth prediction for a cohort of North-Indian women.
+*	Implemented feature selection and designed a regression-based model for first trimester GA estimation that has the highest preterm birth labelling accuracy [1].
+*	Designed a random forest-based model using ultrasound metrics to predict GA accurately in second and third trimesters.
+*	Worked in close collaboration with a team of clinicians at the Translational Health Sciences Institute, Delhi as a part of Bill and Melinda Gates foundation grant, Grand Challenges of India grant and BIRAC grant.
+*	Presented research at multiple Data Science and AI academic conferences.
+
+### Stanford University CA
+Summer Intern, Department of Biochemistry	
+May – August, 2019
+<br>Advisor: Dr. Julia Salzman
+
+*	Designed a pipeline from scratch that implements generalized linear modelling on transcriptomic data to identify conserved features of genomic repeats that facilitate alternative splicing in primates. 
+*	Correlated genomic and transcriptomic data to identify genomic repeat-based features conserved across primate families.
+*	Identified several conserved SINE and LINE repeat-based features that facilitate the formation of alternately spliced transcripts.
+*	Analyzed the statistical significance of the presence of conserved genomic signatures across the genome.
+
+### Khorana scholar, Stanford University CA
+May – August, 2018
+<br>Advisor: Dr. Julia Salzman
+
+*	Selected as one of the 40 Khorana fellowship grant recipients among 1000 applicants, 2018 to conduct research at Stanford School of Medicine. 
+*	Designed a bioinformatic pipeline for downstream analysis of Epstein Barr virus infected human B-cell transcriptomic datasets downloaded from SRA for lytic and latent infection stages of the virus.
+*	Characterized the presence of circRNAs and alternative splicing present in LMP-2A and LMP-2B genes in Epstein-Barr virus validating previous experimental results.
+*	Summarized research in the form a detailed report to be presented at the department research seminar.
+
+# Conferences
+
+*	Runners up and best software tool out of 15 teams, AI Genomics Hackathon, SVAI, San Francisco (2019)
+*	Initiative for Biological Systems Engineering 5th workshop (2019) – best poster and presentation
+*	Gold medal, Foundational Advance track, International Genetically Engineered Machine Competition, Boston (2018)
+
+# Publications
+
+*	Vijayram R, Damaraju N, Xavier A, et al. Comparison of first trimester dating methods for gestational age estimation and their implication on preterm birth classification in a North Indian cohort. medRxiv. Published online January 1, 2020:2019.12.27.19016006. (under review:  Journal of Pediatric and Perinatal Epidemiology)
+*	B P Kailash*, D Karthik*, Mousami Shinde*, Nikhita Damaraju*, et al., ”ChassiDex: A microbial database useful for synthetic biology applications”, submitted on July 16th, 2019, bioRxiv 703033 (* first authors)
+*	Nikhita Damaraju, ”International Genetically Engineered Machine (iGEM) Competition Language Project”, submitted on, IEEE India Info. Vol 13 No. 3, Jul-Sep 2018 Newsletter, p67-p68 
 
 
 
