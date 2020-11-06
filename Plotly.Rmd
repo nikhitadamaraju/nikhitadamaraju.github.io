@@ -1,0 +1,82 @@
+---
+title: "Flex dashboard"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r settings, message = FALSE} 
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+library(ggplot2)
+library(dplyr)
+```
+
+Loading the dataset
+```{r}
+data("instacart")
+```
+
+# Plot 1: number of orders for all aisles that had more than 10k orders
+```{r}
+#bar plot
+instacart %>%
+  count(aisle) %>%
+  filter(n > 10000) %>%
+  mutate(
+    aisle = factor(aisle),
+    aisle = fct_reorder(aisle, n)
+  ) %>%
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar", colors = "viridis")
+```
+
+# Plot 2: Fresh vegetables
+
+```{r}
+box_plot =
+  instacart %>%
+  filter(aisle %in% c("fresh vegetables")) %>%
+  group_by(order_dow) %>%
+  count(product_name) %>%
+  ggplot(aes(x = order_dow, y = n, group = order_dow)) + geom_boxplot() +
+  theme_bw() +
+  labs(
+    title = "Total number of fresh vegetables sold across the week",
+    x = "week",
+    y = "total sales"
+  )
+
+ggplotly(box_plot)
+  
+
+```
+
+
+
+# Plot 3: Line plot
+
+```{r}
+fresh_veggie_plot =
+  instacart %>%
+  filter(aisle %in% c("fresh vegetables")) %>%
+  filter(str_detect(product_name, "^Fresh")) %>%
+  group_by(product_name, order_dow) %>%
+  summarize(mean_hour = mean(order_hour_of_day)) %>%
+  ggplot(aes(x = order_dow, y = mean_hour, color = product_name)) +
+  geom_point() +
+  geom_line() +
+  theme_bw() +
+  labs(
+    title = "mean hour of the day for fresh vegetables",
+    x = "day",
+    y = "mean hour"
+  )
+
+ggplotly(fresh_veggie_plot)
+```
+
+
+
+
