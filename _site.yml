@@ -5,6 +5,8 @@ navbar:
   right:
   - text: "Professional Experience"
     href: experience.html
+  - text: "Problem 2: Flex Dashboard"
+    href: dashboard.html
   - icon: fa-envelope fa-lg
     href: mailto:<nikhita.damaraju@columbia.edu>
   - icon: fa-github fa-lg
